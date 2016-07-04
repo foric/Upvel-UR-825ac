@@ -1,0 +1,1 @@
+atftp --option "mode octet" --option "timeout  60" --verbose --trace -p -l bin/realtek/openwrt-realtek-rtl819xd-AP-fw.bin 192.168.1.6
