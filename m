@@ -8,8 +8,8 @@ export KBUILD_BUILD_HOST="Monster-PC"
 
 
 
-./scripts/feeds update -a
-./scripts/feeds install -a
+#./scripts/feeds update -a
+#./scripts/feeds install -a
 
 #scripts/diffconfig.sh >mydiffconfig
 
@@ -27,8 +27,8 @@ cp .config .config.bak
 #make prereq
 
 #make kernel_menuconfig
-make V=sw -j5
+#make V=sw -j5
 
-#ccache make V=sw -j4 2>&1 | tee build.log
+make V=sw -j4 2>&1 | tee build.log
 
 
